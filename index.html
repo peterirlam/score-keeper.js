@@ -5,10 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Score Keeper</title>
+  <style>
+    .winner {
+      color: green;
+    }
+
+    .loser {
+      color: red;
+    }
+  </style>
 </head>
 
 <body>
   <h1><span id="p1Disp">0</span> to <span id="p2Disp">0</span></h1>
+
+  <select name="" id="playTo">
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5" selected>5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+
   <button id="p1Btn">+1 Player One</button>
   <button id="p2Btn">+1 Player Two</button>
   <button id="reset">Reset</button>
