@@ -33,3 +33,20 @@ p2Btn.addEventListener('click', function() {
     p2Disp.textContent = p2Score;
   }
 });
+
+winningScoreSelect.addEventListener('change', function() {
+  winningScore = parseInt(this.value); //convert from string to num
+  reset();
+});
+
+resetBtn.addEventListener('click', reset); //reference to reset func, no need
+//for invocation operators
+function reset() {
+  gameOver = false;
+  p1Score = 0;
+  p2Score = 0;
+  p1Disp.textContent = 0;
+  p2Disp.textContent = 0;
+  p1Disp.classList.remove('winner', 'loser');
+  p2Disp.classList.remove('winner', 'loser');
+}
